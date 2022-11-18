@@ -107,20 +107,13 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
+
 alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
-# -- colorls --
-#alias lsl="colorls -1"
-#alias lsll="colorls -l"
-#alias lsa="colorls -a"
-#alias lsal="colorls -a -1"
-#alias lsla="colorls -la"
-#alias lslag="colorls -la --gs"
-#source $(dirname $(gem which colorls))/tab_complete.sh
+# iCloud desktop
+alias cdesktop="~/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
 
 # exa
 alias ls="exa"
@@ -150,7 +143,8 @@ eval "$(rbenv init - zsh)"
 eval "$(starship init zsh)"
 
 # zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/efrain.mejia/projects/other/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-autosuggestions colors
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
