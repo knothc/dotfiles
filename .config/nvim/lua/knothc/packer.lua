@@ -41,7 +41,7 @@ return packer.startup(function()
   use 'christoomey/vim-tmux-navigator'
   use 'szw/vim-maximizer'
   use 'vim-scripts/ReplaceWithRegister'
-
+  use 'akinsho/toggleterm.nvim'
 
   -- lualine 
   use 'nvim-lualine/lualine.nvim'
