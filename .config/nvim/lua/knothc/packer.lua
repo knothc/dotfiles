@@ -32,7 +32,7 @@ end
 return packer.startup(function()
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
-  use("bluz71/vim-nightfly-guicolors")
+  use 'bluz71/vim-nightfly-guicolors'
   use 'BurntSushi/ripgrep'
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
