@@ -142,6 +142,8 @@ eval "$(rbenv init - zsh)"
 
 eval "$(starship init zsh)"
 
+eval "$(jump shell)"
+
 # zsh-syntax-highlighting
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /Users/efrain.mejia/projects/other/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

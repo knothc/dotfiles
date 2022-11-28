@@ -178,7 +178,7 @@ format = '[\[$symbol($version)\]](bright-black)'
 format = '[\[$symbol$workspace\]](bright-black)'
 
 [time]
-format = '\[[$time\]](bright-black)'
+format = '[\[$time\]](bright-black)'
 
 [username]
 format = '\[[$user\]](bright-black)'
