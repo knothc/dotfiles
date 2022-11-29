@@ -26,7 +26,7 @@ symbol = " "
 format = '[\[$symbol($version)\]](bright-black)'
 
 [cmd_duration]
-format = '\[[⏱ $duration\]](bright-black)'
+format = '[\[祥$duration\]](bright-black)'
 
 [cobol]
 format = '[\[$symbol($version)\]](bright-black)'
