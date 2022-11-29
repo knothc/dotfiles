@@ -37,7 +37,11 @@ return packer.startup(function()
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
---  use 'nvim-treesitter/nvim-treesitter'  shitloads of errors :S
+  
+    -- treesitter
+  use 'nvim-treesitter/nvim-treesitter'  --shitloads of errors :S
+  use 'p00f/nvim-ts-rainbow'
+
   use 'christoomey/vim-tmux-navigator'
   use 'szw/vim-maximizer'
   use 'vim-scripts/ReplaceWithRegister'
@@ -46,6 +50,8 @@ return packer.startup(function()
   -- lualine 
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-web-devicons'
+
+  -- nvim-tree
   use 'kyazdani42/nvim-tree.lua'
 end)
 
