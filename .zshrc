@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-
+alias c="clear"
 alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
@@ -127,11 +127,16 @@ alias chfind="find . -type d | grep"
 # -- lazygit --
 alias lg='lazygit'
 
+# -- forgit --
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.forgit/forgit.plugin.zsh ] && source ~/.forgit/forgit.plugin.zsh
 gch() {
   git checkout "$(git branch -a | fzf| tr -d '[:space:]')"
 }
+
+# -- json formatting --
+alias jj='pbpaste | jsonpp | pbcopy'
+alias jjj='pbpaste | jsonpp'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

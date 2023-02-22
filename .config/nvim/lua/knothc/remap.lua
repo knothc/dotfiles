@@ -33,6 +33,13 @@ keymap("n", "x", '"_x', opts)
 -- keymap("n", "<C-o>", "<C-w>l", opts) 
 -- keymap("n", "<C-y>", "<C-w>w", opts)
 
+-- Easymotion
+keymap("n", "<leader><leader>.", "<Plug>(easymotion-repeat)", opts)
+keymap("n", "<leader><leader>f", "<Plug>(easymotion-overwin-f)", opts)
+keymap("n", "<leader><leader>j", "<Plug>(easymotion-overwin-j)", opts)
+keymap("n", "<leader><leader>k", "<Plug>(easymotion-overwin-k)", opts)
+keymap("n", "<leader><leader>w", "<Plug>(easymotion-overwin-w)", opts)
+
 -- Splits
 keymap("n", "<leader>sv", "<C-w>v", opts)  -- split window vertically
 keymap("n", "<leader>sh", "<C-w>s", opts)  -- split window horizontally
@@ -62,11 +69,11 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<C-l>", ":bnext<CR>", opts)
+keymap("n", "<C-p>", ":bprevious<CR>", opts)
 
 -- Insert --
--- Press jk fast to enter
+-- Press jk fast to enter normal mode
 keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --

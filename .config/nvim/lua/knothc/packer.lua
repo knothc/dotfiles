@@ -64,6 +64,9 @@ return packer.startup(function()
     -- snippet engine
     use "L3MON4D3/LuaSnip" --snippet engine
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+    -- easymotion
+    use "easymotion/vim-easymotion"
 end)
 
 

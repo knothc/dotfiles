@@ -1,5 +1,5 @@
 # Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
+#"$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
 add_newline = true
@@ -8,7 +8,8 @@ add_newline = true
 # success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
 
 [directory]
-truncation_symbol = ".../"
+truncation_length = 30
+truncation_symbol = '.../'
 read_only = " "
 
 [aws]
