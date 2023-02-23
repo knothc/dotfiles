@@ -1,5 +1,7 @@
 # Get editor completions based on the config schema
-#"$schema" = 'https://starship.rs/config-schema.json'
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '$all'
 
 # Inserts a blank line between shell prompts
 add_newline = true
@@ -8,187 +10,194 @@ add_newline = true
 # success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
 
 [directory]
-truncation_length = 30
+truncation_length = 8
 truncation_symbol = '.../'
 read_only = " "
 
 [aws]
-format = '[\[$symbol($profile)(\($region\))(\[$duration\])\]](bright-black)'
+format = '[\[$symbol($profile)(\($region\))(\[$duration\])\]](fg:136)'
 symbol = "  "
 
 [bun]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [c]
-format = '[\[$symbol($version(-$name))\]](bright-black)'
+format = '[\[$symbol($version(-$name))\]](fg:136)'
 symbol = " "
 
 [cmake]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [cmd_duration]
-format = '[\[祥$duration\]](bright-black)'
+format = '[\[祥$duration\]](fg:136)'
 
 [cobol]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [conda]
-format = '[\[$symbol$environment\]](bright-black)'
+format = '[\[$symbol$environment\]](fg:136)'
 symbol = " "
 
 [crystal]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [daml]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [dart]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 symbol = " "
 
 [deno]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [docker_context]
-format = '[\[$symbol$context\]](bright-black)'
+format = '[\[$symbol$context\]](fg:136)'
 symbol = " "
 
 [dotnet]
-format = '[\[$symbol($version)(🎯 $tfm)\]](bright-black)'
+format = '[\[$symbol($version)(🎯 $tfm)\]](fg:136)'
 
 [elixir]
-format = '[\[$symbol($version \(OTP $otp_version\))\]](bright-black)'
+format = '[\[$symbol($version \(OTP $otp_version\))\]](fg:136)'
 symbol = " "
 
 [elm]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 symbol = " "
 
 [erlang]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [gcloud]
-format = '[\[$symbol$account(@$domain)(\($region\))\]](bright-black)'
+format = '[\[$symbol$account(@$domain)(\($region\))\]](fg:136)'
 
 [git_branch]
-# format = '[\[$symbol$branch\]](bold purple)'
-symbol = " "
+format = '[$symbol $branch](bold purple) '
+symbol = ""
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style))'
-style = "bright-black"
+style = "fg:136"
+
+[git_metrics]
+format = '[(+$added)]($added_style)[(-$deleted)]($deleted_style) '
+disabled = false
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
 
 [golang]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 symbol = " "
 
 [haskell]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [helm]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [hg_branch]
-format = '[\[$symbol$branch\]](bright-black)'
+format = '[\[$symbol$branch\]](fg:136)'
 
 [java]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [julia]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [kotlin]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [kubernetes]
-format = '[\[$symbol$context( \($namespace\))\]](bright-black)'
+format = '[\[$symbol$context( \($namespace\))\]](fg:136)'
 
 [lua]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 symbol = " "
 
 [memory_usage]
-format = '\[$symbol[$ram( | $swap)\]](bright-black)'
+format = '\[$symbol[$ram( | $swap)\]](fg:136)'
 
 [meson]
-format = '[\[$symbol$project\]](bright-black)'
+format = '[\[$symbol$project\]](fg:136)'
 
 [nim]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [nix_shell]
-format = '[\[$symbol$state( \($name\))\]](bright-black)'
+format = '[\[$symbol$state( \($name\))\]](fg:136)'
 
 [nodejs]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 symbol = " "
 
 [ocaml]
-format = '[\[$symbol($version)(\($switch_indicator$switch_name\))\]](bright-black)'
+format = '[\[$symbol($version)(\($switch_indicator$switch_name\))\]](fg:136)'
 
 [openstack]
-format = '[\[$symbol$cloud(\($project\))\]](bright-black)'
+format = '[\[$symbol$cloud(\($project\))\]](fg:136)'
 
 [package]
-format = '[\[$symbol$version\]](bright-black)'
+format = '[\[$symbol$version\]](fg:136)'
 
 [perl]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [php]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [pulumi]
-format = '[\[$symbol$stack\]](bright-black)'
+format = '[\[$symbol$stack\]](fg:136)'
 
 [purescript]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [python]
-#format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](bright-black)'
-format = '[\[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](bright-black)'
+#format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](fg:136)'
+format = '[\[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](fg:136)'
 symbol = " "
 
 [raku]
-format = '[\[$symbol($version-$vm_version)\]](bright-black)'
+format = '[\[$symbol($version-$vm_version)\]](fg:136)'
 
 [red]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [ruby]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 symbol = " "
 
 [rust]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 symbol = " "
 
 [scala]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [spack]
-format = '[\[$symbol$environment\]](bright-black)'
+format = '[\[$symbol$environment\]](fg:136)'
 
 [sudo]
 format = '\[[as $symbol]\]'
 
 [swift]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [terraform]
-format = '[\[$symbol$workspace\]](bright-black)'
+format = '[\[$symbol$workspace\]](fg:136)'
 
 [time]
-format = '[\[$time\]](bright-black)'
+format = '[\[$time\]](fg:136)'
 
 [username]
-format = '\[[$user\]](bright-black)'
+format = '\[[$user\]](fg:136)'
 
 [vagrant]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [vlang]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
 
 [zig]
-format = '[\[$symbol($version)\]](bright-black)'
+format = '[\[$symbol($version)\]](fg:136)'
