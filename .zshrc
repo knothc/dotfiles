@@ -117,8 +117,8 @@ alias cdesktop="~/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
 
 # exa
 alias ls="exa"
-alias lsl="exa -l --icons --color-scale --no-user"
-alias lsla="exa -la --icons --color-scale --no-user"
+alias lsl="exa -l --icons --color-scale --no-user --group-directories-first"
+alias lsla="exa -la --icons --color-scale --no-user --group-directories-first"
 alias lsd="exa -D --icons --color-scale --no-user"    
 
 # -- find --
