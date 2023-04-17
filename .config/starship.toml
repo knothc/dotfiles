@@ -14,65 +14,66 @@ command_timeout = 999
 [directory]
 truncation_length = 8
 truncation_symbol = '.../'
+truncate_to_repo = false
 read_only = " "
 
 [aws]
-format = '[\[$symbol($profile)(\($region\))(\[$duration\])\]](fg:136)'
+format = '[\[$symbol($profile)(\($region\))(\[$duration\])\]](fg:240)'
 symbol = "  "
 
 [bun]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [c]
-format = '[\[$symbol($version(-$name))\]](fg:136)'
+format = '[\[$symbol($version(-$name))\]](fg:240)'
 symbol = " "
 
 [cmake]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [cmd_duration]
-format = '[\[祥$duration\]](fg:136)'
+format = '[\[祥$duration\]](fg:240)'
 
 [cobol]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [conda]
-format = '[\[$symbol$environment\]](fg:136)'
+format = '[\[$symbol$environment\]](fg:240)'
 symbol = " "
 
 [crystal]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [daml]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [dart]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 symbol = " "
 
 [deno]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [docker_context]
-format = '[\[$symbol$context\]](fg:136)'
+format = '[\[$symbol$context\]](fg:240)'
 symbol = " "
 
 [dotnet]
-format = '[\[$symbol($version)(🎯 $tfm)\]](fg:136)'
+format = '[\[$symbol($version)(🎯 $tfm)\]](fg:240)'
 
 [elixir]
-format = '[\[$symbol($version \(OTP $otp_version\))\]](fg:136)'
+format = '[\[$symbol($version \(OTP $otp_version\))\]](fg:240)'
 symbol = " "
 
 [elm]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 symbol = " "
 
 [erlang]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [gcloud]
-format = '[\[$symbol$account(@$domain)(\($region\))\]](fg:136)'
+format = '[\[$symbol$account(@$domain)(\($region\))\]](fg:240)'
 
 [git_branch]
 format = '[$symbol $branch](bold purple) '
@@ -80,7 +81,7 @@ symbol = ""
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style))'
-style = "fg:136"
+style = "fg:240"
 
 [git_metrics]
 format = '[(+$added)]($added_style)[(-$deleted)]($deleted_style) '
@@ -90,116 +91,116 @@ disabled = false
 format = '[\($state( $progress_current of $progress_total)\)]($style) '
 
 [golang]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 symbol = " "
 
 [haskell]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [helm]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [hg_branch]
-format = '[\[$symbol$branch\]](fg:136)'
+format = '[\[$symbol$branch\]](fg:240)'
 
 [java]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [julia]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [kotlin]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [kubernetes]
-format = '[\[$symbol$context( \($namespace\))\]](fg:136)'
+format = '[\[$symbol$context( \($namespace\))\]](fg:240)'
 
 [lua]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 symbol = " "
 
 [memory_usage]
-format = '\[$symbol[$ram( | $swap)\]](fg:136)'
+format = '\[$symbol[$ram( | $swap)\]](fg:240)'
 
 [meson]
-format = '[\[$symbol$project\]](fg:136)'
+format = '[\[$symbol$project\]](fg:240)'
 
 [nim]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [nix_shell]
-format = '[\[$symbol$state( \($name\))\]](fg:136)'
+format = '[\[$symbol$state( \($name\))\]](fg:240)'
 
 [nodejs]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 symbol = " "
 
 [ocaml]
-format = '[\[$symbol($version)(\($switch_indicator$switch_name\))\]](fg:136)'
+format = '[\[$symbol($version)(\($switch_indicator$switch_name\))\]](fg:240)'
 
 [openstack]
-format = '[\[$symbol$cloud(\($project\))\]](fg:136)'
+format = '[\[$symbol$cloud(\($project\))\]](fg:240)'
 
 [package]
-format = '[\[$symbol$version\]](fg:136)'
+format = '[\[$symbol$version\]](fg:240)'
 
 [perl]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [php]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [pulumi]
-format = '[\[$symbol$stack\]](fg:136)'
+format = '[\[$symbol$stack\]](fg:240)'
 
 [purescript]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [python]
-#format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](fg:136)'
-format = '[\[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](fg:136)'
+#format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](fg:240)'
+format = '[\[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](fg:240)'
 symbol = " "
 
 [raku]
-format = '[\[$symbol($version-$vm_version)\]](fg:136)'
+format = '[\[$symbol($version-$vm_version)\]](fg:240)'
 
 [red]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [ruby]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 symbol = " "
 
 [rust]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 symbol = " "
 
 [scala]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [spack]
-format = '[\[$symbol$environment\]](fg:136)'
+format = '[\[$symbol$environment\]](fg:240)'
 
 [sudo]
 format = '\[[as $symbol]\]'
 
 [swift]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [terraform]
-format = '[\[$symbol$workspace\]](fg:136)'
+format = '[\[$symbol$workspace\]](fg:240)'
 
 [time]
-format = '[\[$time\]](fg:136)'
+format = '[\[$time\]](fg:240)'
 
 [username]
-format = '\[[$user\]](fg:136)'
+format = '\[[$user\]](fg:240)'
 
 [vagrant]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [vlang]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'
 
 [zig]
-format = '[\[$symbol($version)\]](fg:136)'
+format = '[\[$symbol($version)\]](fg:240)'

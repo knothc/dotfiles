@@ -34,12 +34,21 @@ keymap("n", "x", '"_x', opts)
 -- keymap("n", "<C-y>", "<C-w>w", opts)
 
 -- Easymotion
-keymap("n", "<leader><leader>.", "<Plug>(easymotion-repeat)", opts)
-keymap("n", "<leader><leader>f", "<Plug>(easymotion-overwin-f)", opts)
-keymap("n", "<leader><leader>j", "<Plug>(easymotion-overwin-j)", opts)
-keymap("n", "<leader><leader>k", "<Plug>(easymotion-overwin-k)", opts)
-keymap("n", "<leader><leader>w", "<Plug>(easymotion-overwin-w)", opts)
-keymap("n", "<leader><leader>L", "<Plug>(easymotion-overwin-line)", opts)
+-- keymap("n", "<leader><leader>.", "<Plug>(easymotion-repeat)", opts)
+-- keymap("n", "<leader><leader>f", "<Plug>(easymotion-overwin-f)", opts)
+-- keymap("n", "<leader><leader>j", "<Plug>(easymotion-overwin-j)", opts)
+-- keymap("n", "<leader><leader>k", "<Plug>(easymotion-overwin-k)", opts)
+-- keymap("n", "<leader><leader>w", "<Plug>(easymotion-overwin-w)", opts)
+-- keymap("n", "<leader><leader>L", "<Plug>(easymotion-overwin-line)", opts)
+
+-- Hop
+require("hop").setup()
+keymap("n", "<leader>h", ":HopWord<cr>", opts)
+keymap("n", "<leader>l", ":HopLineStart<cr>", opts)
+keymap("n", "<leader>f", ":HopChar2<cr>", opts)
+vim.cmd("hi HopNextKey guifg=#ff9900")
+vim.cmd("hi HopNextKey1 guifg=#ff9900")
+vim.cmd("hi HopNextKey2 guifg=#ff9900")
 
 -- Splits
 keymap("n", "<leader>sv", "<C-w>v", opts)  -- split window vertically

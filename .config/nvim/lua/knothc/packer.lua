@@ -44,6 +44,7 @@ return packer.startup(function()
 
     use 'christoomey/vim-tmux-navigator'
     use 'szw/vim-maximizer'
+
     use 'vim-scripts/ReplaceWithRegister'
     use 'akinsho/toggleterm.nvim'
 
@@ -66,7 +67,10 @@ return packer.startup(function()
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
     -- easymotion
-    use "easymotion/vim-easymotion"
+    -- use "easymotion/vim-easymotion"
+    --
+    -- hop
+    use "phaazon/hop.nvim"
 end)
 
 
