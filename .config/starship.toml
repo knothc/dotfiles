@@ -78,6 +78,8 @@ format = '[\[$symbol$account(@$domain)(\($region\))\]](fg:240)'
 [git_branch]
 format = '[$symbol $branch](bold purple) '
 symbol = ""
+truncation_length = 45
+truncation_symbol = "..."
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style))'
