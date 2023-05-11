@@ -12,8 +12,8 @@ command_timeout = 999
 # success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
 
 [directory]
-truncation_length = 8
-truncation_symbol = '.../'
+truncation_length = 4
+truncation_symbol = '…/'
 truncate_to_repo = false
 read_only = " "
 
@@ -79,7 +79,7 @@ format = '[\[$symbol$account(@$domain)(\($region\))\]](fg:240)'
 format = '[$symbol $branch](bold purple) '
 symbol = ""
 truncation_length = 45
-truncation_symbol = "..."
+truncation_symbol = "…"
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style))'
