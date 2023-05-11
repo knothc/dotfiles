@@ -43,7 +43,7 @@ keymap("n", "x", '"_x', opts)
 
 -- Hop
 require("hop").setup()
-keymap("n", "<leader>h", ":HopWord<cr>", opts)
+keymap("n", "<leader>w", ":HopWord<cr>", opts)
 keymap("n", "<leader>l", ":HopLineStart<cr>", opts)
 keymap("n", "<leader>f", ":HopChar2<cr>", opts)
 vim.cmd("hi HopNextKey guifg=#ff9900")
@@ -67,10 +67,10 @@ keymap("n", "<leader>tp", ":tabp<CR>", opts)  -- split window vertically
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
-keymap("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
-keymap("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", opts)
-keymap("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opts)
-keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR>", opts)
+keymap("n", "<leader>tt", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<leader>tj", "<cmd>Telescope treesitter<CR>", opts)
+keymap("n", "<leader>tg", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>tb", "<cmd>Telescope buffers<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)

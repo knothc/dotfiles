@@ -6,5 +6,6 @@ require("knothc.nvim-tree")
 require("knothc.toggleterm")
 require("knothc.treesitter")
 require("knothc.cmp")
+require("knothc.telescope")
 
 print("lua/knothc/init loaded...")
