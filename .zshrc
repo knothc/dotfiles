@@ -127,12 +127,25 @@ alias chfind="find . -type d | grep"
 # -- lazygit --
 alias lg='lazygit'
 
-# -- forgit --
+# -- fzf --
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f ~/.forgit/forgit.plugin.zsh ] && source ~/.forgit/forgit.plugin.zsh
-gch() {
+export FZF_DEFAULT_OPTS="--height 65% --border sharp --prompt '∷ ' --pointer ▶ --marker ⇒ --info=inline"
+
+gche() {
   git checkout "$(git branch -a | fzf| tr -d '[:space:]')"
 }
+greb() {
+  git rebase "$(git branch -a | fzf| tr -d '[:space:]')"
+}
+gbra() {
+  "$(git branch -a | fzf -1)"
+}
+
+#-- forgit --
+[ -f ~/.forgit/forgit.plugin.zsh ] && source ~/.forgit/forgit.plugin.zsh
+
+#-- thefuck --
+eval $(thefuck --alias) 
 
 # -- json formatting --
 alias jj='pbpaste | jsonpp | pbcopy'
