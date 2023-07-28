@@ -30,4 +30,10 @@ opt.wrap = false
 
 opt.iskeyword:append("-")
 
-
+-- autocommands --
+-- autocmd BufNewFile,BufRead *.ini setfiletype dosini
+local api = vim.api
+api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
+    pattern = {"*.podspec", "*Podfile", "*fastfile"},
+    command = "setfiletype ruby"
+})
