@@ -3,7 +3,7 @@
 #ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/efrain.mejia/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export editor=nvim
 
 # Set name of the theme to load --- if set to "random", it will
@@ -163,15 +163,8 @@ eval "$(starship init zsh)"
 eval "$(jump shell)"
 
 # zsh-syntax-highlighting
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/efrain.mejia/projects/other/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/projects/other/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-autosuggestions colors
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
-
-# dotfile repo alias
-alias config='/usr/bin/git --git-dir=/Users/efrain.mejia/.cfg/ --work-tree=/Users/efrain.mejia'
-# ↑ Repo configuration:
-#   - git init --bare $HOME/.cfg
-#   - alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-#   - config config --local status.showUntrackedFiles no 
