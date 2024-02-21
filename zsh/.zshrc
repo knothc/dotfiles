@@ -116,10 +116,10 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias cdesktop="~/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
 
 # exa
-alias ls="exa"
-alias lsl="exa -l --icons --color-scale --no-user --group-directories-first"
-alias lsla="exa -la --icons --color-scale --no-user --group-directories-first"
-alias lsd="exa -D --icons --color-scale --no-user"    
+alias ls="eza"
+alias lsl="eza -l --icons --no-user --group-directories-first"
+alias lsla="eza -la --icons --no-user --group-directories-first"
+alias lsd="eza -D --icons --no-user"    
 
 # -- find --
 alias chfind="find . -type d | grep"
@@ -153,14 +153,13 @@ alias jjj='pbpaste | jsonpp'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # rbenv shims
 eval "$(rbenv init - zsh)"
 
 eval "$(starship init zsh)"
 
-eval "$(jump shell)"
+# -- jump --
+# eval "$(jump shell)"
 
 # zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -168,3 +167,15 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-autosuggestions colors
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
+
+# dotfile repo alias
+alias config='/usr/bin/git --git-dir=/Users/efrain.mejia/.cfg/ --work-tree=/Users/efrain.mejia'
+# ↑ Repo configuration:
+#   - git init --bare $HOME/.cfg
+#   - alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+#   - config config --local status.showUntrackedFiles no 
+
+
+# -- zoxide
+eval "$(zoxide init --cmd j zsh)"
+alias -g home='/Users/efrain.mejia'

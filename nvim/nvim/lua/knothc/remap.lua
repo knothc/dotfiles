@@ -68,9 +68,9 @@ keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>tt", "<cmd>Telescope find_files<CR>", opts)
-keymap("n", "<leader>tj", "<cmd>Telescope treesitter<CR>", opts)
-keymap("n", "<leader>tg", "<cmd>Telescope live_grep<CR>", opts)
-keymap("n", "<leader>tb", "<cmd>Telescope buffers<CR>", opts)
+keymap("n", "<leader>j", "<cmd>Telescope treesitter<CR>", opts)
+keymap("n", "<leader>g", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>b", "<cmd>Telescope buffers<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -79,8 +79,10 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<C-l>", ":bnext<CR>", opts)
-keymap("n", "<C-p>", ":bprevious<CR>", opts)
+keymap("n", "<Tab>", ":bnext<CR>", opts)
+keymap("n", "<S-Tab>", ":bprevious<CR>", opts)
+keymap("n", "<A-u>", ":bprevious<CR>", opts)
+keymap("n", "<A-i>", ":bnext<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter normal mode
