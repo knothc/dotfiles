@@ -162,8 +162,8 @@ eval "$(starship init zsh)"
 # eval "$(jump shell)"
 
 # zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source ~/projects/other/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/projects/other/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-autosuggestions colors
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'

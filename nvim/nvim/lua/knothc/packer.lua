@@ -39,7 +39,11 @@ return packer.startup(function()
     use 'nvim-telescope/telescope.nvim'
 
     -- treesitter
-    use 'nvim-treesitter/nvim-treesitter'  --shitloads of errors :S
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+    
     use 'p00f/nvim-ts-rainbow'
 
     use 'christoomey/vim-tmux-navigator'
@@ -53,7 +57,8 @@ return packer.startup(function()
     use 'kyazdani42/nvim-web-devicons'
 
     -- nvim-tree
-    use 'kyazdani42/nvim-tree.lua'
+    use 'nvim-tree/nvim-tree.lua'
+    use 'nvim-tree/nvim-web-devicons'
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin
