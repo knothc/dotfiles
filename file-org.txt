@@ -1,0 +1,11 @@
+home
+  - .zshrc
+  - .config
+    - nvim
+    - ranger
+    - skhd
+    - tmux
+    - yabai
+    - starship.toml
+
+
