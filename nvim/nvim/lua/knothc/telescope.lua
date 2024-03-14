@@ -19,7 +19,8 @@ telescope.setup{
   },
   pickers = {
     find_files = {
---      theme = "ivy",
+      theme = "dropdown",
+      find_command = { "rg", "--ignore", "-L", "--hidden", "--files" },
     },
     buffers = {
       theme = "dropdown",
