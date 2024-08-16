@@ -7,5 +7,6 @@ home
     - tmux
     - yabai
     - starship.toml
+    - wezterm
 
 
