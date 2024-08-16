@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 #ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
@@ -118,7 +125,9 @@ alias cdesktop="~/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
 # exa
 alias ls="eza"
 alias lsl="eza -l --icons --no-user --group-directories-first"
+alias lslg="eza -lG --icons --no-user --group-directories-first"
 alias lsla="eza -la --icons --no-user --group-directories-first"
+alias lslag="eza -laG --icons --no-user --group-directories-first"
 alias lsd="eza -D --icons --no-user"    
 
 # -- find --
@@ -156,7 +165,9 @@ export NVM_DIR="$HOME/.nvm"
 # rbenv shims
 eval "$(rbenv init - zsh)"
 
-eval "$(starship init zsh)"
+# Starship prompt
+# Trying out Powerlevel10k at the moment
+# eval "$(starship init zsh)"  
 
 # -- jump --
 # eval "$(jump shell)"
@@ -179,3 +190,20 @@ alias config='/usr/bin/git --git-dir=/Users/efrain.mejia/.cfg/ --work-tree=/User
 # -- zoxide
 eval "$(zoxide init --cmd j zsh)"
 alias -g home='/Users/efrain.mejia'
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Command history setup
+# HISTFILE=$HOME/.zhistory
+# SAVEHIST=1000
+# HISTSIZE=999
+# setopt share_history
+# setopt hist_expire_dups_first
+# setopt hist_ignore_dups
+# setopt hist_verify
+
+# completion using arrow keys (based on history)
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
