@@ -37,13 +37,16 @@ return packer.startup(function()
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
-
+    
     -- treesitter
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-    
+
+    -- comment
+    use 'numToStr/Comment.nvim'    
+
     use 'p00f/nvim-ts-rainbow'
 
     use 'christoomey/vim-tmux-navigator'

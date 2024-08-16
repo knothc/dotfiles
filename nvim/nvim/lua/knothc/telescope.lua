@@ -21,13 +21,17 @@ telescope.setup{
     find_files = {
       theme = "dropdown",
       find_command = { "rg", "--ignore", "-L", "--hidden", "--files" },
+      path_display = { "truncate" },
     },
     buffers = {
       theme = "dropdown",
+      path_display = { "tail" },
     },
     treesitter = {
       theme = "ivy",
     },
+    live_grep = {  
+      find_command = { "rg", "--ignore", "-L", "--hidden" },
+    }
   },
 }
-
