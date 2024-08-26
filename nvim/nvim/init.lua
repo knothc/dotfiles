@@ -1,2 +1,2 @@
-require("knothc")
--- print("init.lua loaded")
+require("knothc.core")
+require("knothc.lazy")
