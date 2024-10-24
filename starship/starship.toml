@@ -14,7 +14,7 @@ command_timeout = 2500
 [directory]
 truncation_length = 4
 truncation_symbol = '…/'
-truncate_to_repo = false
+truncate_to_repo = true
 read_only = " "
 
 [aws]
@@ -188,6 +188,7 @@ format = '\[[as $symbol]\]'
 
 [swift]
 format = '[\[$symbol($version)\]](fg:240)'
+disabled = true
 
 [terraform]
 format = '[\[$symbol$workspace\]](fg:240)'
