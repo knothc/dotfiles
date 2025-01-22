@@ -13,8 +13,8 @@ command_timeout = 2500
 
 [directory]
 truncation_length = 4
-truncation_symbol = '…/'
-truncate_to_repo = true
+truncation_symbol = '/…/'
+truncate_to_repo = false
 read_only = " "
 
 [aws]
