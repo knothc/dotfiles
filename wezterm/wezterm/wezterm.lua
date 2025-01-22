@@ -15,7 +15,7 @@ config.enable_tab_bar = false
 config.line_height = 0.9
 
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.75
 config.macos_window_background_blur = 20
 config.window_padding = {
     left = '24px',
@@ -37,5 +37,7 @@ config.window_padding = {
 
 config.color_scheme = 'Tokyo Night'
 -- config.color_scheme = 'Gruvbox Dark (Gogh)'
+
+config.max_fps = 120
 
 return config
