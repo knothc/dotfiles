@@ -1,2 +1,2 @@
-require("knothc.core")
-require("knothc.lazy")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
