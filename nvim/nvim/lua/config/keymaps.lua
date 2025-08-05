@@ -13,3 +13,20 @@ keymap.set("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap.set("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+
+-- TODO: Delete bindings and add new ones (ctr-y)? 
+--
+-- floating terminal
+-- keymap.del("n", "<c-/>")
+-- keymap.del("n", "<c-_>")
+-- keymap.del("n", "<c-y>")
+-- keymap.del("n", "<c-Y>")
+--
+-- keymap.set("n", "<c-Y>", function() Snacks.terminal() end, { desc = "Terminal (cwd)" })
+-- keymap.set("n", "<c-y>", function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
+-- keymap.set("t", "<c-y>", function() Snacks.terminal() end, { desc = "Toggle terminal?" })
+
+-- Terminal Mappings
+-- map("t", "<C-/>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+-- map("t", "<c-_>", "<cmd>close<cr>", { desc = "which_key_ignore" })
+
