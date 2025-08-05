@@ -15,13 +15,13 @@ config.enable_tab_bar = false
 config.line_height = 0.9
 
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.90
+config.window_background_opacity = 0.80
 config.macos_window_background_blur = 30
 config.window_padding = {
     left = '24px',
     right = '24px',
     top = '24px',
-    bottom = '24px'
+    bottom = '8px'
 }
 -- config.colors = {
 --     foreground = "#CBE0F0",
