@@ -116,12 +116,14 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias cdesktop="~/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
 
 # exa
-alias ls="eza"
-alias lsl="eza -l --icons --no-user --group-directories-first"
-alias lslg="eza -lG --icons --no-user --group-directories-first"
-alias lsla="eza -la --icons --no-user --group-directories-first"
-alias lslag="eza -laG --icons --no-user --group-directories-first"
-alias lsd="eza -D --icons --no-user"    
+export EZA_COLORS=""
+# export EZA_COLORS="da=90"
+alias ls="eza --icons"
+alias lsl="eza -l --icons --no-user --no-permissions --time-style=long-iso --group-directories-first"
+alias lslg="eza -lG --icons --no-user --no-permissions --no-filesize --time-style=long-iso --group-directories-first"
+alias lsla="eza -la --icons --no-user --no-permissions --time-style=long-iso --group-directories-first"
+alias lslag="eza -laG --icons --no-user --no-permissions --time-style=long-iso --group-directories-first"
+alias lsd="eza -D --icons --no-user"
 
 # -- find --
 alias chfind="find . -type d | grep"
@@ -134,10 +136,10 @@ alias lg='lazygit'
 export FZF_DEFAULT_OPTS="--height 65% --border sharp --prompt '∷ ' --pointer ▶ --marker ⇒ --info=inline"
 
 gche() {
-  git checkout "$(git branch -a | fzf| tr -d '[:space:]')"
+  git checkout "$(git branch -a | fzf | tr -d '[:space:]')"
 }
 greb() {
-  git rebase "$(git branch -a | fzf| tr -d '[:space:]')"
+  git rebase "$(git branch -a | fzf | tr -d '[:space:]')"
 }
 gbra() {
   "$(git branch -a | fzf -1)"
