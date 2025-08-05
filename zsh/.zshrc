@@ -212,3 +212,5 @@ bindkey '^[[B' history-search-forward
 # Atuin history manager
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh --disable-up-arrow)"
+
+neofetch
