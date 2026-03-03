@@ -171,9 +171,9 @@ format = '[\[$symbol($version)\]](fg:240)'
 format = '[\[$symbol$account(@$domain)(\($region\))\]](fg:240)'
 
 [git_branch]
-format = '[$symbol $branch](bold purple) '
+format = '[$symbol $branch](bold fg:240) '
 symbol = ""
-truncation_length = 45
+truncation_length = 75
 truncation_symbol = "…"
 
 [git_status]
