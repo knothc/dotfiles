@@ -4,3 +4,12 @@
 
 -- Disable autoformat
 vim.g.autoformat = false
+
+-- Special filetypes
+vim.filetype.add({
+  filename = {
+    ["Fastfile"] = "ruby",
+    ["Matchfile"] = "ruby",
+    ["Deliverfile"] = "ruby",
+  },
+})
