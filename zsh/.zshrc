@@ -112,6 +112,7 @@ alias c="clear"
 alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias oc="opencode"
 
 # iCloud desktop
 alias cdesktop="~/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
@@ -215,3 +216,5 @@ bindkey '^[[B' history-search-forward
 eval "$(atuin init zsh --disable-up-arrow)"
 
 neofetch
+# opencode
+export PATH=/Users/efrain.mejia/.opencode/bin:$PATH
