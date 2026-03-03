@@ -136,6 +136,7 @@ alias lg='lazygit'
 # -- fzf --
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--height 65% --border sharp --prompt '∷ ' --pointer ▶ --marker ⇒ --info=inline"
+export FZF_CTRL_T_COMMAND='find . -maxdepth 1'
 
 gche() {
   git checkout "$(git branch -a | fzf | tr -d '[:space:]')"
