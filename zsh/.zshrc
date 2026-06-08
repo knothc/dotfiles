@@ -249,3 +249,6 @@ alias tkghd='GH_HOST=github.je-labs.com gh dash'
 
 # opencode
 export PATH=/Users/efrain.mejia/.opencode/bin:$PATH
+
+# worktrunk
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
