@@ -243,5 +243,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+# gh-dash aliases
+alias ghd='gh dash'
+alias tkghd='GH_HOST=github.je-labs.com gh dash'
+
 # opencode
 export PATH=/Users/efrain.mejia/.opencode/bin:$PATH
