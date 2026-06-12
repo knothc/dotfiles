@@ -8,4 +8,8 @@ stow -t ~/.config tmux -v
 stow -t ~/.config yabai -v
 stow -t ~/.config starship -v
 stow -t ~/.config wezterm -v
+stow -t ~/.config atuin -v
+stow -t ~/.config gh -v
+stow -t ~/.config ghostty -v
+stow -t ~/.config opencode -v
 

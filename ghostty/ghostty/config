@@ -1,0 +1,19 @@
+# Font
+font-family = JetBrainsMonoNL Nerd Font Mono
+font-size = 14
+
+# Line height (approximates wezterm's line_height = 0.9)
+adjust-cell-height = -10%
+
+# Window
+window-decoration = false
+background-opacity = 0.9
+background-blur-radius = 30
+window-padding-x = 24,24
+window-padding-y = 24,8
+
+# Theme
+theme = tokyonight
+
+# Scrolling
+mouse-scroll-multiplier = 1.0

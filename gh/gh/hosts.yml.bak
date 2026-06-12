@@ -1,0 +1,15 @@
+github.com:
+    user: knothc
+    git_protocol: ssh
+    users:
+        knothc: {}
+github.je-labs.com:
+    user: efrain-mejia
+    git_protocol: ssh
+    users:
+        efrain-mejia:
+jet.ghe.com:
+    git_protocol: ssh
+    users:
+        efrain-mejia:
+    user: efrain-mejia

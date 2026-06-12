@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+
+  // Option 1: Maximum Intelligence (Active)
+  "agents": {
+    "oracle":     { "model": "github-copilot/gpt-5.4", "variant": "high" },
+    "sisyphus":   { "model": "github-copilot/gemini-3.1-pro-preview", "variant": "high" },
+    "momus":      { "model": "github-copilot/gpt-5.4", "variant": "high" },
+    "prometheus": { "model": "github-copilot/gemini-3.1-pro-preview", "variant": "high" },
+    "metis":      { "model": "github-copilot/gpt-5.4", "variant": "high" }
+  }
+
+  // Option 2: Coding-Optimized & Balanced
+  // "agents": {
+  //   "oracle":     { "model": "github-copilot/gpt-5.4", "variant": "high" },
+  //   "sisyphus":   { "model": "github-copilot/gpt-5.3-codex", "variant": "high" },
+  //   "momus":      { "model": "github-copilot/gpt-5.4", "variant": "high" },
+  //   "prometheus": { "model": "google/gemini-3.5-flash", "variant": "high" },
+  //   "metis":      { "model": "github-copilot/gpt-5.4-mini", "variant": "high" }
+  // }
+
+  // Option 3: Gemini-Native Ecosystem
+  // "agents": {
+  //   "oracle":     { "model": "google/gemini-3.1-pro-preview", "variant": "high" },
+  //   "sisyphus":   { "model": "google/gemini-3.1-pro-preview", "variant": "high" },
+  //   "momus":      { "model": "google/gemini-3.1-pro-preview", "variant": "high" },
+  //   "prometheus": { "model": "google/gemini-3.5-flash", "variant": "high" },
+  //   "metis":      { "model": "google/gemini-3.5-flash", "variant": "high" }
+  // }
+}
