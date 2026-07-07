@@ -18,6 +18,10 @@ focus_pane_right = "ctrl+l"
 next_tab = "ctrl+n"
 previous_tab = "ctrl+b"
 
+# --- Workspace Navigation ---
+next_workspace = "ctrl+shift+n"
+previous_workspace = "ctrl+shift+b"
+
 # --- Window Splitting ---
 split_vertical = "prefix+|"
 split_horizontal = "prefix+-"
