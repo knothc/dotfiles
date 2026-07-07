@@ -1,0 +1,5 @@
+# Ignore everything in the herdr directory (sockets, logs, session state)
+*
+# But explicitly track these files
+!.gitignore
+!config.toml

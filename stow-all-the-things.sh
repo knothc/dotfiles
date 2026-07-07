@@ -12,4 +12,5 @@ stow -t ~/.config atuin -v
 stow -t ~/.config gh -v
 stow -t ~/.config ghostty -v
 stow -t ~/.config opencode -v
+stow -t ~/.config herdr -v
 

@@ -1,0 +1,39 @@
+[theme]
+name = "catppuccin"
+
+[terminal]
+default_shell = "/bin/zsh"
+
+[keys]
+# --- Prefix ---
+prefix = "ctrl+a"
+
+# --- Pane Navigation (vim-tmux-navigator style) ---
+focus_pane_left = "ctrl+h"
+focus_pane_down = "ctrl+j"
+focus_pane_up = "ctrl+k"
+focus_pane_right = "ctrl+l"
+
+# --- Tab/Window Navigation ---
+next_tab = "ctrl+n"
+previous_tab = "ctrl+b"
+
+# --- Window Splitting ---
+split_vertical = "prefix+|"
+split_horizontal = "prefix+-"
+
+# --- Zoom / Fullscreen ---
+zoom = "prefix+z"
+
+# --- Config Reload ---
+reload_config = "prefix+r"
+
+# --- Resizing ---
+resize_mode = "prefix+shift+r"
+
+[ui]
+mouse_capture = true
+pane_borders = true
+
+[experimental]
+pane_history = true
