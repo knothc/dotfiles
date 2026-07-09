@@ -261,4 +261,13 @@ export PATH="$HOME/.local/bin:$PATH"
 
 
 # Kiro CLI post block. Keep at the bottom of this file.
+# Herdr shortcuts
+hwr() {
+  herdr workspace rename "$HERDR_WORKSPACE_ID" "$1"
+}
+
+htr() {
+  herdr tab rename "$HERDR_TAB_ID" "$1"
+}
+
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
