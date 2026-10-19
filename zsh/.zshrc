@@ -293,4 +293,8 @@ jiratx() {
   | column -t -s "$(printf '\t')"
 }
 
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
+# git-fuzzy
+export PATH="$HOME/Repos/git-fuzzy/bin:$PATH"
+
+# machine-local / work config (not tracked)
+[[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
