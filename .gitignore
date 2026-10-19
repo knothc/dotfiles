@@ -1,0 +1,8 @@
+# tmux: plugins are installed by TPM
+tmux/tmux/plugins/
+
+# opencode: work-specific config and generated state, kept local
+opencode/opencode/opencode.json
+opencode/opencode/tui.json
+opencode/opencode/lumen-opencode-plugin-update.json
+opencode/opencode/opencode.*-*-*.json
