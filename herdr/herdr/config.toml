@@ -18,11 +18,11 @@ focus_pane_right = "ctrl+l"
 
 # --- Tab/Window Navigation ---
 next_tab = "ctrl+n"
-previous_tab = "ctrl+b"
+previous_tab = "ctrl+y"
 
 # --- Workspace Navigation ---
-next_workspace = "ctrl+shift+n"
-previous_workspace = "ctrl+shift+b"
+next_workspace = "cmd+alt+n"
+previous_workspace = "cmd+alt+y"
 
 # --- Window Splitting ---
 split_vertical = "prefix+|"
@@ -36,6 +36,8 @@ reload_config = "prefix+r"
 
 # --- Resizing ---
 resize_mode = "prefix+shift+r"
+
+open_worktree = "prefix+shift+o"
 
 [ui]
 mouse_capture = true
