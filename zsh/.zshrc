@@ -117,6 +117,9 @@ alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias oc="opencode"
+alias wm="workmux"
+alias wtcheckout="checkout_in_worktree.sh"
+alias wtbranch="create_worktree.sh"
 
 # iCloud desktop
 alias cdesktop="~/Library/Mobile Documents/com~apple~CloudDocs/Desktop"
@@ -268,6 +271,26 @@ hwr() {
 
 htr() {
   herdr tab rename "$HERDR_TAB_ID" "$1"
+}
+
+# my jira tickets
+jiratx() {
+  acli jira workitem search \
+    --jql "assignee = currentUser() AND statusCategory != Done ORDER BY updated DESC" \
+    --json \
+    --fields="summary,issuetype" \
+    --paginate \
+  | jq -r '
+    .[]
+    | .fields.summary as $title
+    | if ($title | length) > 85 then
+        ($title[0:85] + "...")
+      else
+        $title
+      end as $shortTitle
+    | "\(.key)\t\($shortTitle)\t\(.fields.issuetype.name)"
+  ' \
+  | column -t -s "$(printf '\t')"
 }
 
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
