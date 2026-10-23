@@ -177,6 +177,7 @@ alias jjj='pbpaste | jsonpp'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"  # brew-installed nvm
 # rbenv shims
 eval "$(rbenv init - zsh)"
 
@@ -195,7 +196,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
 
 # dotfile repo alias
-alias config='/usr/bin/git --git-dir=/Users/efrain.mejia/.cfg/ --work-tree=/Users/efrain.mejia'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # ↑ Repo configuration:
 #   - git init --bare $HOME/.cfg
 #   - alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -204,7 +205,7 @@ alias config='/usr/bin/git --git-dir=/Users/efrain.mejia/.cfg/ --work-tree=/User
 
 # -- zoxide
 eval "$(zoxide init --cmd j zsh)"
-alias -g home='/Users/efrain.mejia'
+alias -g home='$HOME'
 
 
 # Command history setup
@@ -250,6 +251,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"  # brew-installed nvm completion
 
 
 # gh-dash aliases
@@ -257,7 +259,7 @@ alias ghd='gh dash'
 alias tkghd='GH_HOST=github.je-labs.com gh dash'
 
 # opencode
-export PATH=/Users/efrain.mejia/.opencode/bin:$PATH
+export PATH=$HOME/.opencode/bin:$PATH
 
 # worktrunk
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi

@@ -1,0 +1,4 @@
+# per-machine gh auth, not stowed
+^/gh/hosts\.yml
+^/gh/hosts\.yml\.bak
+\.stow-local-ignore

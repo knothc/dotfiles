@@ -6,3 +6,10 @@ opencode/opencode/opencode.json
 opencode/opencode/tui.json
 opencode/opencode/lumen-opencode-plugin-update.json
 opencode/opencode/opencode.*-*-*.json
+
+# gh: auth hosts are per machine
+gh/gh/hosts.yml
+gh/gh/hosts.yml.bak
+
+# atuin: installer receipt is per machine
+atuin/atuin/atuin-receipt.json
